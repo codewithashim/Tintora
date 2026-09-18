@@ -1,4 +1,4 @@
-// Gutenberg Block Editor Styling Alignment SCSS
+// Gutenberg Block Editor & Elementor Styling Alignment SCSS
 
 .entry-content {
   .alignwide {
@@ -21,5 +21,16 @@
     font-style: italic;
     color: var(--tintora-primary);
     margin: 2rem 0;
+  }
+}
+
+/* Elementor Canvas & Builder Container Alignment */
+.elementor-page {
+  .elementor-section {
+    font-family: var(--tintora-font-body);
+  }
+
+  .elementor-heading-title {
+    font-family: var(--tintora-font-heading);
   }
 }

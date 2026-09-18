@@ -1,6 +1,6 @@
 # Tintora Customizer & Configuration Guide
 
-All visual branding, colors, phone numbers, and hero copy in **Tintora** can be adjusted live using the standard WordPress Customizer.
+All visual branding, colors, phone numbers, and hero copy in **Tintora** can be adjusted live using the standard WordPress Customizer, or designed visually using Elementor Page Builder.
 
 ---
 
@@ -33,9 +33,14 @@ All visual branding, colors, phone numbers, and hero copy in **Tintora** can be 
 - **Main Text Color**: Default `#222222`.
 - **Muted Text Color**: Default `#6B7280`.
 
-### 4. Homepage Hero Section
-- **Hero Eyebrow**: Pill text above title.
-- **Hero Heading**: Main hero title.
-- **Hero Description**: Lead paragraph copy.
-- **Primary / Secondary Buttons**: CTA text and target section links (e.g., `#contact`).
-- **Hero Background Image**: Upload high-resolution automotive or glass photography.
+---
+
+## Elementor Page Builder Integration
+
+When the **Elementor** plugin is installed and active, Tintora unlocks native drag-and-drop custom widgets in the Elementor panel under the **Tintora Theme Widgets** category:
+
+1. **Tintora Hero Section**: Drag & drop hero banner with live stat counters.
+2. **Tintora Before/After Slider**: Draggable image comparison widget.
+3. **Tintora Service Card**: Modular service box with icon selection.
+4. **Tintora Pricing Card**: Tier package box with featured badge controls.
+5. **Tintora FAQ Accordion**: ARIA accessible accordion repeater widget.
