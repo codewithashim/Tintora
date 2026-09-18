@@ -1,0 +1,185 @@
+/* Tintora Feature-Wise Dashboard Styles */
+
+.tintora-admin-wrap {
+  margin: 20px 20px 20px 0;
+  max-width: 1140px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.tintora-admin-header {
+  background: #111111;
+  color: #FFFFFF;
+  padding: 2.25rem 2.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-left: 5px solid #D09A40;
+}
+
+.tintora-admin-branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tintora-admin-branding h1 {
+  color: #FFFFFF;
+  margin: 0;
+  font-size: 1.85rem;
+  font-weight: 800;
+}
+
+.tintora-admin-branding .version-tag {
+  background: #D09A40;
+  color: #111111;
+  font-weight: 800;
+  font-size: 0.8rem;
+  padding: 2px 10px;
+  border-radius: 50px;
+}
+
+.tintora-admin-subtitle {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
+  margin: 0.5rem 0 0;
+}
+
+.tintora-nav-tabs {
+  border-bottom: 2px solid #E2E8F0;
+  margin-bottom: 2rem;
+}
+
+.tintora-nav-tabs .nav-tab {
+  border: none;
+  background: transparent;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  margin-right: 0.5rem;
+  border-radius: 8px 8px 0 0;
+  color: #64748B;
+  transition: all 0.2s ease;
+}
+
+.tintora-nav-tabs .nav-tab:hover {
+  color: #1E293B;
+  background: #F1F5F9;
+}
+
+.tintora-nav-tabs .nav-tab-active {
+  background: #FFFFFF !important;
+  color: #111111 !important;
+  border-bottom: 3px solid #D09A40 !important;
+  font-weight: 700;
+}
+
+.tintora-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.tintora-card h3 {
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  color: #0F172A;
+
+  .dashicons {
+    color: #D09A40;
+    margin-right: 0.3rem;
+  }
+}
+
+.tintora-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.status-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.status-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #F1F5F9;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.badge-active {
+  background: #DCFCE7;
+  color: #15803D;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.badge-inactive {
+  background: #F1F5F9;
+  color: #64748B;
+  font-size: 0.8rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* Modern Switch Controls */
+.tintora-switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 26px;
+}
+
+.tintora-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #CBD5E1;
+  transition: 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background-color: #D09A40;
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

@@ -12,19 +12,49 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header();
-?>
 
-<?php get_template_part( 'template-parts/sections/hero' ); ?>
-<?php get_template_part( 'template-parts/sections/services' ); ?>
-<?php get_template_part( 'template-parts/sections/about' ); ?>
-<?php get_template_part( 'template-parts/sections/why-choose-us' ); ?>
-<?php get_template_part( 'template-parts/sections/process' ); ?>
-<?php get_template_part( 'template-parts/sections/projects' ); ?>
-<?php get_template_part( 'template-parts/sections/testimonials' ); ?>
-<?php get_template_part( 'template-parts/sections/pricing' ); ?>
-<?php get_template_part( 'template-parts/sections/faq' ); ?>
-<?php get_template_part( 'template-parts/sections/cta' ); ?>
-<?php get_template_part( 'template-parts/sections/contact' ); ?>
+if ( tintora_get_option( 'enable_section_hero', 1 ) ) {
+	get_template_part( 'template-parts/sections/hero' );
+}
 
-<?php
+if ( tintora_get_option( 'enable_section_services', 1 ) ) {
+	get_template_part( 'template-parts/sections/services' );
+}
+
+if ( tintora_get_option( 'enable_section_about', 1 ) ) {
+	get_template_part( 'template-parts/sections/about' );
+}
+
+if ( tintora_get_option( 'enable_section_why_choose', 1 ) ) {
+	get_template_part( 'template-parts/sections/why-choose-us' );
+}
+
+if ( tintora_get_option( 'enable_section_process', 1 ) ) {
+	get_template_part( 'template-parts/sections/process' );
+}
+
+if ( tintora_get_option( 'enable_section_projects', 1 ) ) {
+	get_template_part( 'template-parts/sections/projects' );
+}
+
+if ( tintora_get_option( 'enable_section_testimonials', 1 ) ) {
+	get_template_part( 'template-parts/sections/testimonials' );
+}
+
+if ( tintora_get_option( 'enable_section_pricing', 1 ) ) {
+	get_template_part( 'template-parts/sections/pricing' );
+}
+
+if ( tintora_get_option( 'enable_section_faq', 1 ) ) {
+	get_template_part( 'template-parts/sections/faq' );
+}
+
+if ( tintora_get_option( 'enable_section_cta', 1 ) ) {
+	get_template_part( 'template-parts/sections/cta' );
+}
+
+if ( tintora_get_option( 'enable_section_contact', 1 ) ) {
+	get_template_part( 'template-parts/sections/contact' );
+}
+
 get_footer();

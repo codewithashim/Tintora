@@ -28,6 +28,7 @@ npm run watch:scss
 Tintora provides hooks for customization:
 
 ### Filters:
+
 - `tintora_custom_background_args` (array): Modifies default background parameters.
 - `tintora_content_width` (int): Adjusts content width bound (default: 1200).
 

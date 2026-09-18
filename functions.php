@@ -33,6 +33,7 @@ $tintora_includes = array(
 	'inc/security.php',
 	'inc/woocommerce.php',
 	'inc/elementor.php',
+	'inc/dashboard/class-tintora-dashboard.php',
 );
 
 foreach ( $tintora_includes as $file ) {
