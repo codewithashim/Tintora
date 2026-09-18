@@ -32,6 +32,7 @@ $tintora_includes = array(
 	'inc/performance.php',
 	'inc/security.php',
 	'inc/woocommerce.php',
+	'inc/elementor.php',
 );
 
 foreach ( $tintora_includes as $file ) {
