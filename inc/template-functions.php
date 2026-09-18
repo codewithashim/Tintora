@@ -11,6 +11,40 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
+ * Helper function to retrieve Theme Options with Customizer Fallbacks
+ *
+ * @param string $key Option key.
+ * @param mixed  $default Default value if empty.
+ * @return mixed Option value.
+ */
+function tintora_get_option( $key, $default = '' ) {
+	$options = get_option( 'tintora_theme_options', array() );
+
+	if ( isset( $options[ $key ] ) && '' !== $options[ $key ] ) {
+		return $options[ $key ];
+	}
+
+	// Customizer fallback lookup mapping
+	$customizer_mapping = array(
+		'phone'           => 'tintora_phone',
+		'email'           => 'tintora_email',
+		'address'         => 'tintora_address',
+		'hours'           => 'tintora_hours',
+		'header_cta_text' => 'tintora_header_cta_text',
+		'header_cta_link' => 'tintora_header_cta_link',
+		'color_primary'   => 'tintora_color_primary',
+		'color_accent'    => 'tintora_color_accent',
+		'color_background'=> 'tintora_color_background',
+	);
+
+	if ( isset( $customizer_mapping[ $key ] ) ) {
+		return get_theme_mod( $customizer_mapping[ $key ], $default );
+	}
+
+	return $default;
+}
+
+/**
  * Adds custom classes to the array of body classes.
  *
  * @param array $classes Classes for the body element.
@@ -23,7 +57,7 @@ function tintora_body_classes( $classes ) {
 	}
 
 	// Sticky header status
-	if ( get_theme_mod( 'tintora_sticky_header', true ) ) {
+	if ( tintora_get_option( 'enable_sticky_header', get_theme_mod( 'tintora_sticky_header', true ) ) ) {
 		$classes[] = 'has-sticky-header';
 	}
 
@@ -33,7 +67,7 @@ function tintora_body_classes( $classes ) {
 	}
 
 	// Homepage transparent header
-	if ( is_front_page() && get_theme_mod( 'tintora_transparent_header', true ) ) {
+	if ( is_front_page() && tintora_get_option( 'enable_transparent_header', get_theme_mod( 'tintora_transparent_header', true ) ) ) {
 		$classes[] = 'has-transparent-hero-header';
 	}
 
