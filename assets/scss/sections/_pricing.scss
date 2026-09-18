@@ -1,0 +1,14 @@
+// Pricing Section SCSS
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

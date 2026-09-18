@@ -1,0 +1,71 @@
+// About Section SCSS
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-images {
+    position: relative;
+
+    .primary-img {
+      border-radius: var(--tintora-radius-md);
+      box-shadow: var(--tintora-shadow-md);
+      width: 88%;
+    }
+
+    .experience-badge {
+      position: absolute;
+      bottom: -1.5rem;
+      right: 0;
+      background: var(--tintora-primary);
+      color: #FFFFFF;
+      padding: 1.5rem 2rem;
+      border-radius: var(--tintora-radius-md);
+      border: 2px solid var(--tintora-accent);
+      box-shadow: var(--tintora-shadow-gold);
+      text-align: center;
+
+      .badge-years {
+        font-family: var(--tintora-font-heading);
+        font-size: 2.75rem;
+        font-weight: 800;
+        color: var(--tintora-accent);
+        line-height: 1;
+      }
+
+      .badge-label {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .about-content {
+    .features-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 2rem 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-weight: 600;
+        font-size: 0.95rem;
+
+        svg {
+          color: var(--tintora-accent);
+        }
+      }
+    }
+  }
+}

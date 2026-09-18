@@ -1,0 +1,42 @@
+// Process Section SCSS
+
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .process-card {
+    position: relative;
+    background: var(--tintora-surface);
+    border: 1px solid var(--tintora-border);
+    border-radius: var(--tintora-radius-md);
+    padding: 2.25rem 1.75rem;
+
+    .step-number {
+      font-family: var(--tintora-font-heading);
+      font-size: 3rem;
+      font-weight: 800;
+      color: rgba(208, 154, 64, 0.25);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .process-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .process-desc {
+      color: var(--tintora-muted);
+      font-size: 0.95rem;
+    }
+  }
+}

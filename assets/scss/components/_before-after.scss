@@ -1,0 +1,112 @@
+// Before / After Image Comparison Component SCSS
+
+.tintora-before-after {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: var(--tintora-radius-md);
+  overflow: hidden;
+  box-shadow: var(--tintora-shadow-md);
+  user-select: none;
+  -webkit-user-select: none;
+
+  .before-after-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; // 16:9 ratio
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    .before-image-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 2;
+      transition: width 0.05s linear;
+
+      .before-image {
+        width: 1000px; // fallback max container size
+        max-width: none;
+      }
+    }
+
+    .badge {
+      position: absolute;
+      top: 1.25rem;
+      z-index: 3;
+      background: rgba(17, 17, 17, 0.8);
+      backdrop-filter: blur(8px);
+      color: #FFFFFF;
+      padding: 0.35rem 1rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+
+      &.badge-before {
+        left: 1.25rem;
+      }
+
+      &.badge-after {
+        right: 1.25rem;
+      }
+    }
+
+    .before-after-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 40px;
+      margin-left: -20px;
+      z-index: 4;
+      cursor: ew-resize;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .handle-line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: var(--tintora-accent);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      }
+
+      .handle-button {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--tintora-accent);
+        color: var(--tintora-primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        z-index: 5;
+        transition: transform 0.2s ease;
+
+        &:hover,
+        &:focus {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

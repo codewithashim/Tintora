@@ -1,0 +1,25 @@
+{
+  "name": "tintora-wordpress-theme",
+  "version": "1.0.0",
+  "description": "Premium WordPress Theme for Window Tinting and Window Film Businesses",
+  "main": "index.php",
+  "scripts": {
+    "build:scss": "sass assets/scss/main.scss assets/css/main.css --style=compressed && sass assets/scss/components.scss assets/css/components.css --style=compressed && sass assets/scss/responsive.scss assets/css/responsive.css --style=compressed",
+    "watch:scss": "sass --watch assets/scss:assets/css --style=expanded"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "window-tinting",
+    "window-film",
+    "scss",
+    "automotive",
+    "commercial",
+    "residential"
+  ],
+  "author": "Tintora Studio",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}

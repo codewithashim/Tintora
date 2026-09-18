@@ -1,0 +1,21 @@
+// Tintora Master SCSS Entry: Responsive Media Queries & Accessibility
+
+@use 'variables';
+@use 'mixins';
+
+@media (max-width: 767px) {
+  body.has-mobile-action-bar {
+    padding-bottom: 60px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

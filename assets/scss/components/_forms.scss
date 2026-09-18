@@ -1,0 +1,62 @@
+// Form Plugins (CF7, WPForms, Gravity Forms, Native) Integration SCSS
+
+@use 'buttons';
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="search"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  background: var(--tintora-background);
+  border: 1px solid var(--tintora-border);
+  border-radius: var(--tintora-radius-sm);
+  font-family: var(--tintora-font-body);
+  font-size: 0.95rem;
+  color: var(--tintora-text);
+  transition: var(--tintora-transition);
+
+  &:focus {
+    outline: none;
+    border-color: var(--tintora-accent);
+    background: #FFFFFF;
+    box-shadow: 0 0 0 3px rgba(208, 154, 64, 0.15);
+  }
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--tintora-primary);
+  margin-bottom: 0.4rem;
+}
+
+/* Contact Form 7 integration */
+.wpcf7-form {
+  p {
+    margin-bottom: 1.25rem;
+  }
+
+  .wpcf7-submit {
+    @extend %btn;
+    @extend %btn-primary;
+    width: 100%;
+  }
+}
+
+/* WPForms integration */
+.wpforms-container {
+  .wpforms-field {
+    margin-bottom: 1.25rem;
+  }
+
+  .wpforms-submit {
+    @extend %btn;
+    @extend %btn-primary;
+  }
+}

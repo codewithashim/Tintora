@@ -1,0 +1,86 @@
+// Buttons & CTA Component SCSS
+
+%btn,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.75rem;
+  font-family: var(--tintora-font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: var(--tintora-radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+  transition: var(--tintora-transition);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+  svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover svg {
+    transform: translateX(4px);
+  }
+}
+
+%btn-primary,
+.btn-primary {
+  background: linear-gradient(135deg, #D09A40 0%, #B8832B 100%);
+  color: #111111;
+  border-color: #D09A40;
+
+  &:hover {
+    background: linear-gradient(135deg, #E2A84B 0%, #C99035 100%);
+    box-shadow: var(--tintora-shadow-gold);
+    transform: translateY(-2px);
+  }
+}
+
+%btn-secondary,
+.btn-secondary {
+  background: var(--tintora-primary);
+  color: #FFFFFF;
+
+  &:hover {
+    background: #252525;
+    transform: translateY(-2px);
+  }
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: var(--tintora-primary);
+  color: var(--tintora-primary);
+
+  &:hover {
+    background: var(--tintora-primary);
+    color: #FFFFFF;
+  }
+}
+
+.btn-outline-white {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #FFFFFF;
+
+  &:hover {
+    background: #FFFFFF;
+    color: var(--tintora-primary);
+  }
+}
+
+.btn-lg {
+  padding: 1.1rem 2.25rem;
+  font-size: 1.05rem;
+
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+}

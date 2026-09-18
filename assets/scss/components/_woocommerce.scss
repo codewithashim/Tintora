@@ -1,0 +1,63 @@
+// WooCommerce Overrides & Store SCSS
+
+@use 'buttons';
+
+.woocommerce {
+  ul.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    li.product {
+      background: var(--tintora-surface);
+      border: 1px solid var(--tintora-border);
+      border-radius: var(--tintora-radius-md);
+      padding: 1.25rem;
+      text-align: center;
+      transition: var(--tintora-transition);
+
+      &:hover {
+        box-shadow: var(--tintora-shadow-md);
+        transform: translateY(-4px);
+      }
+
+      .woocommerce-loop-product__title {
+        font-size: 1.15rem;
+        margin: 1rem 0 0.5rem;
+      }
+
+      .price {
+        color: var(--tintora-accent);
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+
+      .button {
+        @extend %btn;
+        @extend %btn-primary;
+        width: 100%;
+      }
+    }
+  }
+
+  .single-product {
+    div.product {
+      .product_title {
+        font-size: 2.25rem;
+      }
+
+      p.price {
+        font-size: 1.75rem;
+        color: var(--tintora-accent);
+        font-weight: 800;
+      }
+
+      .single_add_to_cart_button {
+        @extend %btn;
+        @extend %btn-primary;
+      }
+    }
+  }
+}

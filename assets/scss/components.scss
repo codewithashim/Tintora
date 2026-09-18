@@ -1,0 +1,22 @@
+// Tintora Master SCSS Entry: Components & Sections
+
+@use 'variables';
+@use 'mixins';
+
+@use 'components/header';
+@use 'components/footer';
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/before-after';
+@use 'components/gallery';
+@use 'components/accordion';
+@use 'components/forms';
+@use 'components/woocommerce';
+@use 'components/editor';
+
+@use 'sections/hero';
+@use 'sections/services';
+@use 'sections/about';
+@use 'sections/process';
+@use 'sections/pricing';
+@use 'sections/cta';

@@ -1,0 +1,47 @@
+// Tintora Theme Variables & Design Tokens
+
+$primary: #111111 !default;
+$secondary: #D09A40 !default;
+$accent: #D09A40 !default;
+$background: #F7F7F5 !default;
+$surface: #FFFFFF !default;
+$text: #222222 !default;
+$muted: #6B7280 !default;
+$border: rgba(0, 0, 0, 0.08) !default;
+$dark-bg: #0D0D0D !default;
+$dark-surface: #181818 !default;
+$dark-border: rgba(255, 255, 255, 0.12) !default;
+
+$font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !default;
+$font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !default;
+
+$radius-sm: 6px !default;
+$radius-md: 12px !default;
+$radius-lg: 20px !default;
+$container-max-width: 1240px !default;
+$transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !default;
+$transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !default;
+$shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04) !default;
+$shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08) !default;
+$shadow-gold: 0 10px 30px rgba(208, 154, 64, 0.2) !default;
+
+:root {
+  --tintora-primary: #{$primary};
+  --tintora-secondary: #{$secondary};
+  --tintora-accent: #{$accent};
+  --tintora-background: #{$background};
+  --tintora-surface: #{$surface};
+  --tintora-text: #{$text};
+  --tintora-muted: #{$muted};
+  --tintora-border: #{$border};
+  --tintora-dark-bg: #{$dark-bg};
+  --tintora-dark-surface: #{$dark-surface};
+  --tintora-radius-sm: #{$radius-sm};
+  --tintora-radius-md: #{$radius-md};
+  --tintora-radius-lg: #{$radius-lg};
+  --tintora-font-heading: #{$font-heading};
+  --tintora-font-body: #{$font-body};
+  --tintora-transition: #{$transition-normal};
+  --tintora-shadow-md: #{$shadow-md};
+  --tintora-shadow-gold: #{$shadow-gold};
+}

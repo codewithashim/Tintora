@@ -1,0 +1,62 @@
+// Accessible FAQ Accordion Component SCSS
+
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .faq-item {
+    background: var(--tintora-surface);
+    border: 1px solid var(--tintora-border);
+    border-radius: var(--tintora-radius-md);
+    overflow: hidden;
+    transition: var(--tintora-transition);
+
+    &.is-open {
+      border-color: rgba(208, 154, 64, 0.4);
+
+      .faq-button {
+        color: var(--tintora-accent);
+
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .faq-button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      background: transparent;
+      border: none;
+      font-family: var(--tintora-font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--tintora-primary);
+      text-align: left;
+      cursor: pointer;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease;
+        flex-shrink: 0;
+      }
+    }
+
+    .faq-panel {
+      padding: 0 1.5rem 1.25rem;
+      color: var(--tintora-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+
+      &[hidden] {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+# Copyright (C) 2026 Tintora Studio
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Tintora 1.0.0\n"
+"Report-Msgid-Bugs-To: https://example.com/support\n"
+"POT-Creation-Date: 2026-09-18 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Tintora Studio <info@tintorafilm.com>\n"
+"Language-Team: English <info@tintorafilm.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Tintora POT Generator 1.0\n"
+"X-Domain: tintora\n"
+
+msgid "Primary Menu"
+msgstr ""
+
+msgid "Footer Menu"
+msgstr ""
+
+msgid "Mobile Navigation Menu"
+msgstr ""
+
+msgid "Get a Free Quote"
+msgstr ""
+
+msgid "Explore Services"
+msgstr ""
+
+msgid "Automotive Window Tinting"
+msgstr ""
+
+msgid "Residential Window Film"
+msgstr ""
+
+msgid "Commercial Window Film"
+msgstr ""
+
+msgid "UV Protection Film"
+msgstr ""
+
+msgid "Security & Safety Film"
+msgstr ""
+
+msgid "Privacy Window Film"
+msgstr ""
+
+msgid "Decorative Window Film"
+msgstr ""
+
+msgid "Solar Control Film"
+msgstr ""
+
+msgid "Years Experience"
+msgstr ""
+
+msgid "Vehicles Tinted"
+msgstr ""
+
+msgid "UV Rejection"
+msgstr ""
+
+msgid "Lifetime Warranty"
+msgstr ""

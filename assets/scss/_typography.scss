@@ -1,0 +1,72 @@
+// Typography & Heading System
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--tintora-font-heading);
+  color: var(--tintora-primary);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+p.lead {
+  font-size: 1.2rem;
+  color: var(--tintora-muted);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.text-accent {
+  color: var(--tintora-accent);
+}
+
+.text-muted {
+  color: var(--tintora-muted);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 50px;
+  font-size: 0.825rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: rgba(208, 154, 64, 0.12);
+  color: var(--tintora-accent);
+  border: 1px solid rgba(208, 154, 64, 0.25);
+  margin-bottom: 1rem;
+}
